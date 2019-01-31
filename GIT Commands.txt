@@ -1,0 +1,85 @@
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption
+$ git clone https://github.com/praveenvizag/AESEncryption-Decryption.git
+Cloning into 'AESEncryption-Decryption'...
+warning: You appear to have cloned an empty repository.
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption
+$ git checkout -b "AES Encryption"
+fatal: not a git repository (or any of the parent directories): .git
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption
+$ cd AESEncryption-Decryption/
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (m                                                                                            aster)
+$ git checkout -b "AES Encryption"
+fatal: 'AES Encryption' is not a valid branch name.
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (m                                                                                            aster)
+$ git checkout -b AES Encryption
+fatal: 'Encryption' is not a commit and a branch 'AES' cannot be created from it
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (m                                                                                            aster)
+$ git checkout -b AES-Encryption
+Switched to a new branch 'AES-Encryption'
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (A                                                                                            ES-Encryption)
+$ git add /.
+fatal: C:/Program Files/Git/: 'C:/Program Files/Git/' is outside repository
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
+$ git add .
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
+$ git commit -m "AES Encryption"
+[AES-Encryption (root-commit) ec14015] AES Encryption
+ Committer: Praveenkumar Konchada <M1043827@mindtree.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 91 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 bin/com/pk/encryption/util/AESEncryption.class
+ create mode 100644 src/com/pk/encryption/util/AESEncryption.java
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
+$ git push
+fatal: The current branch AES-Encryption has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin AES-Encryption
+
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
+Enumerating objects: 18, done.in AES-Encryption
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (18/18), 3.35 KiB | 571.00 KiB/s, done.
+Total 18 (delta 0), reused 0 (delta 0)
+To https://github.com/praveenvizag/AESEncryption-Decryption.git
+ * [new branch]      AES-Encryption -> AES-Encryption
+Branch 'AES-Encryption' set up to track remote branch 'AES-Encryption' from 'origin'.
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
+$
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
+$ git pull
+Already up to date.
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
+$ ^C
+
+M1043827@A4ML21930 MINGW64 /d/GIT Java/AESEncryption/AESEncryption-Decryption (AES-Encryption)
