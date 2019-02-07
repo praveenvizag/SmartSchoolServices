@@ -1,0 +1,155 @@
+ cd Praveen_M1043827_Hiberante_201/
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Pravee                                                                                            n_M1043827_Hiberante_201 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/M1043827/Downloads/Hibernate_2                                                                                            01/Hibernate_201-master/Praveen_M1043827_Hiberante_201/.git/
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Pravee                                                                                            n_M1043827_Hiberante_201 (master)
+$ git remote origin git add .
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--m                                                                                            irror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)..                                                                                            .]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Pravee                                                                                            n_M1043827_Hiberante_201 (master)
+$ git branch  - b hibernates
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    --list                list branch names
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (master)
+$ git branch hiberantes
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (master)
+$ git checkout hiberantes
+Switched to branch 'hiberantes'
+M       pom.xml
+M       src/main/java/com/mindtree/hibernate/controller/EventRegistrationController.java
+M       src/main/java/com/mindtree/hibernate/dao/EventRegistrationDAO.java
+M       src/main/java/com/mindtree/hibernate/dao/EventRegistrationImplDAO.java
+M       src/main/java/com/mindtree/hibernate/service/EventRegistrationImplService.java
+M       src/main/java/com/mindtree/hibernate/service/EventRegistrationService.java
+M       src/main/java/com/mindtree/hibernate/util/EventRegistrationUtil.java
+D       target/classes/META-INF/maven/com.mindtree/Praveen_m1043827/pom.properties
+D       target/classes/META-INF/maven/com.mindtree/Praveen_m1043827/pom.xml
+M       target/classes/com/mindtree/hibernate/controller/EventRegistrationController.class
+M       target/classes/com/mindtree/hibernate/dao/EventRegistrationDAO.class
+M       target/classes/com/mindtree/hibernate/dao/EventRegistrationImplDAO.class
+M       target/classes/com/mindtree/hibernate/service/EventRegistrationImplService.class
+M       target/classes/com/mindtree/hibernate/service/EventRegistrationService.class
+M       target/classes/com/mindtree/hibernate/util/EventRegistrationUtil.class
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (hiberantes)
+$ git add .
+warning: LF will be replaced by CRLF in pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/main/java/com/mindtree/hibernate/controller/EventRegistrationController.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/classes/META-INF/maven/com.mindtree/Praveen_M1043827_Hibernates/pom.xml.
+The file will have its original line endings in your working directory
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (hiberantes)
+$ git commit -m "adding files to local repository"
+[hiberantes 0a7102f] adding files to local repository
+ Committer: Praveenkumar Konchada <M1043827@mindtree.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 18 files changed, 141 insertions(+), 63 deletions(-)
+ create mode 100644 src/main/java/com/mindtree/hibernate/exception/DatabaseException.java
+ create mode 100644 target/classes/META-INF/maven/com.mindtree/Praveen_M1043827_Hibernates/pom.properties
+ rename target/classes/META-INF/maven/com.mindtree/{Praveen_m1043827 => Praveen_M1043827_Hibernates}/pom.xml (95%)
+ delete mode 100644 target/classes/META-INF/maven/com.mindtree/Praveen_m1043827/pom.properties
+ rewrite target/classes/com/mindtree/hibernate/dao/EventRegistrationDAO.class (72%)
+ rewrite target/classes/com/mindtree/hibernate/dao/EventRegistrationImplDAO.class (62%)
+ create mode 100644 target/classes/com/mindtree/hibernate/exception/DatabaseException.class
+ rewrite target/classes/com/mindtree/hibernate/service/EventRegistrationService.class (67%)
+ rewrite target/classes/com/mindtree/hibernate/util/EventRegistrationUtil.class (67%)
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (hiberantes)
+$ git remote add origin https://github.com/praveenvizag/Hiberante-Event-Registration.git
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (hiberantes)
+$ git remote -v
+origin  https://github.com/praveenvizag/Hiberante-Event-Registration.git (fetch)
+origin  https://github.com/praveenvizag/Hiberante-Event-Registration.git (push)
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (hiberantes)
+$ git push remote origin master
+error: src refspec origin does not match any.
+error: failed to push some refs to 'remote'
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (hiberantes)
+$ git push origin master
+Enumerating objects: 72, done.
+Counting objects: 100% (72/72), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (62/62), done.
+Writing objects: 100% (72/72), 29.33 KiB | 732.00 KiB/s, done.
+Total 72 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/praveenvizag/Hiberante-Event-Registration.git
+ * [new branch]      master -> master
+
+M1043827@A4ML21930 MINGW64 ~/Downloads/Hibernate_201/Hibernate_201-master/Praveen_M1043827_Hiberante_201 (hiberantes)
+$
