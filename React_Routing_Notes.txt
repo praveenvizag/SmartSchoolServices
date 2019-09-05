@@ -1,0 +1,161 @@
+
+
+npm i prop-types@15.6.2
+
+Component.propTypes = {
+
+id:PropTypes.number,
+name:PropTypes.string
+}
+///it is to assign default value to props
+const {textProperty,value} = this.props;
+
+Component.defaultProps = {
+textProperty:"name",
+value :"_id"
+}
+
+
+=======
+
+npm i react-router-dom@4.3.1
+
+import BrowserRouter from 'react-router-dom'
+we need to wrap the App.js with BrowserRouter
+<BrowserRouter>
+<App/>
+</BrowserRouter>
+this (BrowserRouter) component wraps the history object in browser and passes it down to the component tree.
+Any where in the compont tree we wil be able to use the history object.
+
+===
+import {Router } from 'react-router-dom'
+<Route path = "/home" exact component = ""/>
+<Route path = "/contacts/:id/:name" exact component = ""/>
+<Route path = "/admin/:id?" exact component = ""/>
+<Route path = "/" exact component = ""/>  ? means optional parameter
+Route component is a wrapper around the component we had in Route tag and it will automatically injects three properties called history location match.
+
+
+=====Switch======
+Switch renders the first matched component from the routes.
+Exact :It renders the exact matched component
+with swith ,excat no longer required
+
+<Link to "/admin">Admin</Link>
+with link we can acheive single page application and we can avoid reloading the browser refresh on each click of router.
+All aour components are downoladed and placed in bundle.js ahead of time whwn the application loads for the first time.
+
+-==========
+use render method if we want to pass props in router
+<Route path = "contact" render ={(props)=> <Contact id ={id} {...props}/>}/>
+adding props will enable us to use history match location
+
+=============Query Params=====
+
+to read the query params install below
+
+npm install query-string@6.1.0
+
+usage==> 
+import queryString from 'query-string'
+const posts = ({match,history,location}) => {
+const queryParams = queryString.parse(location.search);
+
+}
+
+======Redirecting====
+import {Redirect } from 'react-router-dom'
+
+<Route path = "/home" exact component = ""/>
+<Route path = "/contacts/:id/:name" exact component = ""/>
+<Route path = "/admin/:id?" exact component = ""/>
+<Route path = "/not-found" component = "NotFound" />
+<Redirect from = "/users" to = "/userList" /> ===> if path matches to users redirect to userList 
+<Route path = "/" exact component = ""/>  ? means optional parameter
+<Redirect from = "/" exact to = "/Home" /> ---if path exactly matches redirect to home
+<Redirect to = "/not-found" /> ---if path doesnt matches redirect to not found
+
+====Push n replace ==
+push n replace availabe in history object 
+this.props.history.push('/products')----if we click back it will go back to prev page
+this.props.history.replace('/products')--this will not allow user to go back
+
+====
+import 'bootstrap/dist/css/bootstrap.css'
+import 'font-awesome/css/font-awesome.css'
+
+npm i bootstrap@version --save  ...sae will make entry in pacage.josn file
+npm i font-awesome --save
+
+===dom access in react==
+
+class Login extedns Component {
+
+
+never user document object or jquery while developing react.
+one solution will be ref ---
+userName = React.createRef();
+//set ref attribute to any input element or nay html element like below.
+handleChange = () =>{
+ const userName =  this.userName.current.value
+render() {
+
+eg:<input ref = {this.userName} name = "" value = "" oncahnge = {this.handleChange}/>
+
+}
+
+}
+
+================npm joi for form validation====
+npm i joi-browser@13.4
+
+
+=====calling backecnd services===
+
+npm i axios@0.18
+import axios from 'axios'
+
+
+call services from componentDidmount
+
+ async componentDidmount() {
+const promise = axios.get("url") ==> this will return promise object.
+promise is a objet that holds asyncronous operation.
+
+ const reponse =  promise.then() ==>this will give the asyncronous result====>  poor way of doing
+const reponse  = await promise; ==>if we are using await we should decorate (componentDidmount or any method which is using axios) 
+with async keyword as above
+
+or 
+
+const {data:posts} = await axios.get("url");
+ 
+}
+
+====posting a data===
+
+addData = async => () {
+const obj = {title:"",id :""};
+const response = await axios.post("url",obj ) ==> this will return promise object.
+since addData is a property that we are setting to function
+}
+
+=====optimistic vs pessimistic update===
+update the UI first before caling the servie is a optmistic update.
+
+eg:
+handleDelete = async post =>{
+const originals = this.state.posts;
+const posts = this.posts.filter(p=> p.id!== post.id);
+this.setState({posts});
+try {
+await axios.delete('url');
+} catch(ex) {
+
+this.setState({posts:orig'});
+throw new Error("");
+}
+}
+
+====Exception Handling==
