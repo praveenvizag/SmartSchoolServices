@@ -2,7 +2,6 @@ package com.smartschool.services.manager;
 
 import java.util.List;
 
-import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Service;
 
 import com.smartschool.services.dao.StudentsDAO;
