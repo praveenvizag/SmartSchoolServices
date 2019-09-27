@@ -1,6 +1,7 @@
 package com.smartschool.services.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
@@ -17,8 +18,26 @@ public class Students {
 	private Integer grade;
 	private Integer age;
 	private LocalDate joiningDate = LocalDate.now();
-	private List<Subjects> coursesRegistered;
+	private List<Subjects> coursesRegistered = new ArrayList<Subjects>();
+	private GuardianData guardianData;
+	private AddressData addressData;
 
+
+	public GuardianData getGuardianData() {
+		return guardianData;
+	}
+
+	public void setGuardianData(GuardianData guardianData) {
+		this.guardianData = guardianData;
+	}
+
+	public AddressData getAddressData() {
+		return addressData;
+	}
+
+	public void setAddressData(AddressData addressData) {
+		this.addressData = addressData;
+	}
 
 	public List<Subjects> getCoursesRegistered() {
 		return coursesRegistered;
@@ -84,9 +103,17 @@ public class Students {
 		builder.append(age);
 		builder.append(", joiningDate=");
 		builder.append(joiningDate);
+		builder.append(", coursesRegistered=");
+		builder.append(coursesRegistered);
+		builder.append(", guardianData=");
+		builder.append(guardianData);
+		builder.append(", addressData=");
+		builder.append(addressData);
 		builder.append("]");
 		return builder.toString();
 	}
+
+	
 
 
 
